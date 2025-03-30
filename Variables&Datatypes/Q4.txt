@@ -1,0 +1,8 @@
+4. Question: What will be the output of the following code?
+const a = 10;
+a = 20;
+console.log(a);
+
+Answer: TypeError: Assignment to constant variable.
+
+Explanation: Since a is declared with const, its value cannot be reassigned. Attempting to assign a new value to a const variable will throw a TypeError.

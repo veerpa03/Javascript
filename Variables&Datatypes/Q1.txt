@@ -1,0 +1,41 @@
+1. Question: What is the difference between let and var in JavaScript?
+
+Ans - let: let has block scope 
+      var: var has fucntion scope
+
+
+Explanation: let was introduced in ES6 to provide block-level scoping, which means variables declared with let are confined to the block, statement, or expression where they are used. In contrast, var is function-scoped, meaning it is accessible throughout the entire function, even outside the block in which it was declared.
+
+In JavaScript "{}" space inside this bracket is called an block
+
+{
+    let a=10;
+    var b=5;
+}
+console.log(a); //This will give an reference error as let can not be accessed ouside the block({})
+console.log(b); //This will give a perfect result of 5
+
+But for var,
+
+function example() {
+  if (true) {
+    var x = 10;   // `x` is function-scoped
+    let y = 20;   // `y` is block-scoped
+  }
+
+  console.log(x); // This will work, since `x` is function-scoped
+  console.log(y); // This will throw an error, since `y` is block-scoped
+}
+
+example();
+
+
+
+function example() {
+  var x = 10;
+  console.log(x);  // Works inside the function
+}
+
+example();
+
+console.log(x);  // Error: x is not defined outside the function

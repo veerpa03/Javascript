@@ -1,0 +1,17 @@
+5. Question: What is the output of the following code?
+let num = 10;
+num = num + "5";
+console.log(num);
+
+Answer: "105"
+
+Explanation:
+    Initially, num is assigned the value 10, which is a number.
+
+    On the second line, the expression num + "5" is evaluated. Since the second operand "5" is a string, JavaScript performs type coercion and converts the number 10 into a string.
+
+    Then, JavaScript concatenates the string "10" with the string "5", resulting in the string "105".
+
+
+Key Point:
+    In JavaScript, when you try to add a number to a string, the number is automatically converted to a string and concatenated, rather than being added numerically.

@@ -1,0 +1,9 @@
+13. Question: What is the result of this code?
+
+let obj = { name: "Alice" };
+obj = null;
+console.log(obj);
+
+Answer: null
+
+Explanation: The variable obj is initially assigned an object. Then, it is reassigned to null, so when console.log(obj) is called, it outputs null.

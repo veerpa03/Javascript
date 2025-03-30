@@ -1,0 +1,9 @@
+10. Question: What will the following code output?
+
+let x = 10;
+let y = "10";
+console.log(x === y);
+
+Answer: false
+
+Explanation: The === operator checks both value and type. Here, x is a number, and y is a string, so the comparison returns false because their types differ.

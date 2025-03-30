@@ -1,0 +1,7 @@
+7. Question: What is the output of the following code?
+console.log(typeof NaN);
+
+Answer: "number"
+
+Explanation: Although NaN stands for "Not a Number," it is actually of type number in JavaScript. This is another quirk of the language's type system.
+

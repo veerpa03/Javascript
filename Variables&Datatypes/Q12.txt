@@ -1,0 +1,5 @@
+12. Question: What does the Symbol() function return?
+Answer: A new unique symbol.
+
+Explanation: The Symbol() function in JavaScript creates a new, unique symbol, which can be used as an identifier for object properties. Symbols are guaranteed to be unique and are often used to create properties that are not accidentally overwritten.
+

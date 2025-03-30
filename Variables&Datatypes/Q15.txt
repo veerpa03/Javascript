@@ -1,0 +1,7 @@
+15. Question: What is the output of the following code?
+
+let value = 42;
+console.log(value instanceof Number);
+Answer: false
+
+Explanation: The instanceof operator checks whether an object is an instance of a specific class. Since value is a primitive number and not an instance of the Number class, the result is false.

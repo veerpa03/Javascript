@@ -1,0 +1,53 @@
+6. Question: How does JavaScript treat the data type of null?
+
+Answer: null is an object.
+
+
+Explanation:
+In JavaScript, null is a primitive value that represents the intentional absence of any object value. Despite this, JavaScript mistakenly classifies null as an object when using the typeof operator. This is considered a bug in the language, and it has been a part of JavaScript since its early versions.
+
+Example:
+let value = null;
+console.log(typeof value);  // Output: "object"
+
+
+typeof null returns "object", which is misleading because null is not actually an object—it is a special primitive value used to indicate "no value" or "empty value."
+
+Key Points:
+null is a primitive type and represents the absence of a value.
+
+typeof null returns "object", which is a historical mistake in the JavaScript language specification.
+
+
+
+
+Primitive vs Non-Primitive Data Types in JavaScript
+Primitive Data Types:
+Definition: Simple values, immutable, stored by value.
+
+Examples: String, Number, BigInt, Boolean, undefined, null, Symbol.
+
+Characteristics:
+
+Cannot be changed (immutable).
+
+Assigned by value (copies are made).
+
+Non-Primitive Data Types:
+Definition: Complex types, mutable, stored by reference.
+
+Examples: Object, Array, Function, Date, RegExp.
+
+Characteristics:
+
+Can be changed (mutable).
+
+Assigned by reference (both variables point to the same memory location).
+
+Key Differences:
+
+Feature	        Primitive	        Non-Primitive
+
+Storage	        By value	        By reference
+Mutability	    Immutable	        Mutable
+Examples	    Number, String	    Object, Array

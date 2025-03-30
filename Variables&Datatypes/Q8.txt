@@ -1,0 +1,10 @@
+8. Question: Which of the following values is considered "falsy" in JavaScript?
+
+0
+"" (empty string)
+undefined
+NaN
+
+Answer: All of them are falsy values.
+
+Explanation: In JavaScript, falsy values are values that evaluate to false when used in a boolean context. The values 0, "", undefined, and NaN are all falsy.

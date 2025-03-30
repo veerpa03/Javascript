@@ -1,0 +1,9 @@
+9. Question: What will the following code log to the console?
+let a = 3;
+let b = "3";
+console.log(a == b);
+
+Answer: true
+
+Explanation: The == operator performs type coercion, meaning it converts both values to the same type before comparing them. Since a (a number) and b (a string) both represent the same numeric value, == coerces the string "3" to the number 3, so the comparison returns true.
+

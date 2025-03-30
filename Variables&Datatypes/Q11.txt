@@ -1,0 +1,5 @@
+11. Question: How would you check if a variable x is a number in JavaScript?
+
+Answer: Using typeof x === 'number'.
+
+Explanation: The typeof operator returns the type of a variable. To check if a variable is a number, you can compare the result of typeof x with the string 'number'.

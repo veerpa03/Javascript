@@ -1,0 +1,10 @@
+2. Question: What is the result of the following code?
+
+let x = 5;
+x = "hello";
+console.log(x);
+
+O/P = hello
+
+
+Explanation: In this example, x is initially assigned the value 5. Later, the value of x is reassigned to "hello". JavaScript allows variables to change their data type, so this code outputs "hello".

@@ -1,0 +1,29 @@
+3. Question: What does the keyword const do in JavaScript?
+
+Ans - const creates a variable that cannot be reassigned.
+
+
+Explanation: const declares a variable whose value cannot be reassigned after its initial assignment. It doesn't mean the value is immutable, just that the binding to the variable is immutable. For example, objects or arrays declared with const can still have their properties or elements changed.
+
+Example 1:
+    const x = 10;
+    console.log(x);  // Output: 10
+
+    // Reassigning will result in an error
+    x = 20;  // TypeError: Assignment to constant variable.
+
+    In this example, the variable x is declared using const. Since const creates a constant reference, you cannot reassign x to a new value after it's initialized. Attempting to do so results in a TypeError.
+
+
+Example 2:
+    const person = { name: 'Alice', age: 25 };
+    console.log(person.name);  // Output: Alice
+
+    // You can modify the properties of the object
+    person.age = 26;
+    console.log(person.age);  // Output: 26
+
+    // But you can't reassign the whole object
+    person = { name: 'Bob', age: 30 };  // TypeError: Assignment to constant variable.
+
+    Here, person is an object declared with const. While you cannot reassign the person object to a new object, you can modify its properties (like changing age from 25 to 26). This illustrates that the binding is immutable, but the value itself (if it's an object or array) can still be modified.
