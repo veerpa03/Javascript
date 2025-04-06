@@ -1,0 +1,1 @@
+const answer = (x) => x+1
