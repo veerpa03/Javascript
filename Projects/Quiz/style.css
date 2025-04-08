@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    width: 100vh;
+    height: 50vh;
+    background: burlywood;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4%;
+}
+
+.inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px 100px;
+    padding-top:4% ;
+}
